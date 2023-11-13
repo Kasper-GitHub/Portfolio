@@ -67,6 +67,26 @@
             font-size: 2.5rem;
         }
 
+        .leftsection .buttons {
+            padding: 40px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #15155f;
+            color: snow;
+            border: 2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .leftsection .btn:hover {
+            background: #8a2be2;
+            font-size: 15.1px;
+            color: rgb(255, 255, 255);
+        }
+
         .rightsection img {
             width: 95%;
         }
@@ -145,33 +165,83 @@
             font-size: 15px;
         }
 
-        footer{
+        footer {
             background-color: #0a061d;
-            height: 233px;
         }
 
-        .footer{
+        .footer {
             display: flex;
             padding: 23px 122px;
             justify-content: space-evenly;
         }
 
-        .footer-first{
+        .footer-first {
             width: 180px;
         }
 
-        .footer-first > h3{
+        .footer-first>h3 {
             color: antiquewhite;
         }
 
-        .footer-first > p{
+        .footer-first>p {
             color: white;
             font-size: small;
             font-style: italic;
         }
 
-        .footer-second ul{
+        .footer-second ul {
             list-style: none;
+        }
+
+        .footer-second ul li a {
+            text-decoration: none;
+            color: rgb(225, 195, 231);
+        }
+
+        .footer-second ul li a:hover {
+            text-decoration: none;
+            color: rgb(145, 19, 192);
+        }
+
+        .footer-third > h4{
+            text-align: center;
+        }
+
+        .footer-third img {
+            margin: 15px 0;
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .footer-third ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-third ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+
+        footer .credit>a {
+            text-decoration: none;
+            color: rgb(71, 71, 210);
+        }
+
+        footer .credit {
+            text-align: center;
+            color: rgb(71, 71, 210);
+            padding: 12px 0;
+        }
+
+        footer .credit>a:hover {
+            color: aqua;
+        }
+
+        .social:hover {
+            background-color: none;
+            box-shadow: 0 0 50px greenyellow;
         }
     </style>
 
@@ -180,7 +250,7 @@
 <body>
     <header>
         <nav>
-            <div class="left">Welcome</div>
+            <div class="left">Portfolio</div>
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -198,6 +268,10 @@
                 Hi! My name is <span class="purple">Ankush ...</span>
                 <div>I am a Passionate</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="rightsection">
                 <img src="sample.png" alt="">
@@ -264,16 +338,30 @@
             <div class="footer-first">
                 <h3 class="footer-head">Ankush Bhowmik</h3>
                 <p class="footer-text">B.Sc. in Physics (Honours)</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="footer-second">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
-            <div class="footer-third"></div>
+            <div class="footer-third">
+                <h4>Social Links</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/ankush-bhowmik/"><img class="social" src="linkedin.png"
+                                alt=""></a></li>
+                    <li><a href="mailto:physicsbuddy@myyahoo.com"><img class="social" src="email.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/@Kasper_360"><img class="social" src="youtube.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="credit">
+            Copyright <a href="www.physicsbuddy.me">&#169;physicsbuddy.me</a> | Designed by Ankush | All rights
+            reserved.
         </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
