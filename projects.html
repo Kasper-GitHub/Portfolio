@@ -4,10 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(4, 4, 39);
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(31, 31, 92);
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: rgb(106, 192, 235);
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 3rem;
+            color: blueviolet;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+        }
+        .project-card {
+            background: #1e1e2f;
+            border-radius: 10px;
+            box-shadow: 0 0 20px blueviolet;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: calc(33% - 20px);
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card h2 {
+            font-size: 1.8rem;
+            color: blueviolet;
+            padding: 20px;
+        }
+        .project-card p {
+            padding: 0 20px 20px;
+            font-size: 1rem;
+        }
+        footer {
+            background-color: #0a061d;
+            text-align: center;
+            padding: 20px 0;
+            color: rgb(71, 71, 210);
+        }
+    </style>
 </head>
 <body>
-    <h1>Projects</h1>
-    <div><h3>Under Constructions...</h3></div>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At placeat magni natus, animi inventore perspiciatis eligendi consequatur deserunt, quod maxime, eos rerum consequuntur. Quam similique quae quaerat. Officiis, sint ipsa!
+
+<header>
+    <nav>
+        <div class="left">Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>My Projects</h1>
+    <div class="projects">
+        <div class="project-card">
+            <img src="python_project.jpg" alt="Python Project">
+            <h2>Python Projects</h2>
+            <p>Various Python projects covering data analysis, machine learning, and automation scripts.</p>
+        </div>
+        <div class="project-card">
+            <img src="fortran_project.jpg" alt="Fortran Project">
+            <h2>Fortran Numerical Methods</h2>
+            <p>Collection of Fortran programs implementing numerical methods for scientific computing.</p>
+        </div>
+        <div class="project-card">
+            <img src="arduino_project.jpg" alt="Arduino Project">
+            <h2>Arduino Projects</h2>
+            <p>Embedded systems projects using Arduino for automation and control applications.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright © ankushbhowmik.in | Designed by Ankush | All rights reserved.</p>
+</footer>
+
 </body>
 </html>
