@@ -72,6 +72,21 @@
             margin-bottom: 20px;
             animation: fadeUp 1.2s ease-in-out;
         }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .images img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.1);
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -116,6 +131,9 @@
 
 <div class="container">
     <h1>About Me</h1>
+    <div class="images">
+        <img src="Ankush.jpg" alt="Ankush" title="Ankush Bhowmik">
+    </div>
     <div class="content">
         <h2>Hi, I'm Ankush Bhowmik</h2>
         <p>I am a passionate Physics graduate from Serampore College under Calcutta University, currently pursuing my master's degree at Banaras Hindu University. I have a strong interest in computational physics, numerical methods, and programming.</p>
