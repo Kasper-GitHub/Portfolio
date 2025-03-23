@@ -4,10 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(4, 4, 39);
+            color: white;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(31, 31, 92);
+            padding: 0 50px;
+        }
+        nav .left {
+            font-size: 2rem;
+            color: white;
+        }
+        nav .right ul {
+            list-style: none;
+            display: flex;
+        }
+        nav .right ul li {
+            margin: 0 15px;
+        }
+        nav .right ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav .right ul li a:hover {
+            color: rgb(106, 192, 235);
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 3rem;
+            animation: fadeIn 1s ease-in-out;
+            margin-bottom: 20px;
+        }
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: left;
+            line-height: 1.8;
+        }
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a061d;
+            color: rgb(71, 71, 210);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
+
+<header>
+    <nav>
+        <div class="left">Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
     <h1>About Me</h1>
-    <div><h3>Under Constructions...</h3></div>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At placeat magni natus, animi inventore perspiciatis eligendi consequatur deserunt, quod maxime, eos rerum consequuntur. Quam similique quae quaerat. Officiis, sint ipsa!
+    <div class="content">
+        <h2>Hi, I'm Ankush Bhowmik</h2>
+        <p>I am a passionate Physics graduate from Serampore College under Calcutta University, currently pursuing my master's degree at Banaras Hindu University. I have a strong interest in computational physics, numerical methods, and programming.</p>
+        <p>My expertise lies in Python, Fortran, and Arduino programming. I enjoy working on projects involving data analysis, scientific computing, and web development. My portfolio showcases my dedication to solving complex problems through programming and creativity.</p>
+        <p>Feel free to explore my work and reach out to collaborate!</p>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright © ankushbhowmik.in | Designed by Ankush | All rights reserved.</p>
+</footer>
+
 </body>
 </html>
