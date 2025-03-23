@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: rgb(4, 4, 39);
-            color: #fff;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        nav {
-            background: rgb(31, 31, 92);
+            background-color: rgb(4, 4, 39);
             color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            padding: 15px 30px;
+            height: 70px;
+            background-color: rgb(31, 31, 92);
         }
-        nav .left {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        nav .right ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+
+        nav ul {
             display: flex;
+            justify-content: center;
         }
-        nav .right ul li {
-            margin: 0 15px;
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
         }
-        nav .right ul li a {
+
+        nav ul li a {
             text-decoration: none;
             color: white;
-            font-size: 1rem;
         }
-        nav .right ul li a:hover {
-            color: blueviolet;
+
+        nav ul li a:hover {
+            font-size: 1.03rem;
+            color: rgb(106, 192, 235);
         }
-        .heading {
-            text-align: center;
-            font-size: 3rem;
-            color: white;
-            margin: 50px 0 20px;
-            opacity: 0;
-            animation: fadeIn 2s forwards;
+
+        .left {
+            font-size: 2rem;
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(-30px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        form {
+
+        .container {
+            max-width: 80vw;
+            margin: 50px auto;
             background: #282c34;
             padding: 40px;
             box-shadow: 0 0 15px blueviolet;
             border-radius: 8px;
-            max-width: 600px;
-            margin: 40px auto;
         }
+
+        .container h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 30px;
+        }
+
         label {
             display: block;
             margin: 15px 0 5px;
@@ -73,6 +75,7 @@
             color: blueviolet;
             font-weight: bold;
         }
+
         input, textarea {
             width: 100%;
             padding: 12px;
@@ -82,75 +85,112 @@
             background: #1e1e1e;
             color: #fff;
         }
+
         button {
-            background: blueviolet;
-            color: #1e1e1e;
-            border: 0;
-            padding: 12px 25px;
+            display: block;
+            width: 100%;
+            background: #15155f;
+            color: snow;
+            border: 2px solid white;
+            padding: 12px;
+            border-radius: 10px;
             cursor: pointer;
-            font-weight: bold;
+            font-size: 15px;
+            transition: 0.3s;
         }
+
         button:hover {
             background: #8a2be2;
+            color: white;
         }
+
         footer {
-            text-align: center;
-            padding: 20px;
-            background: #0a061d;
+            background-color: #0a061d;
             color: rgb(71, 71, 210);
+            text-align: center;
+            padding: 20px 0;
         }
+
+        .footer a {
+            color: rgb(225, 195, 231);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: rgb(145, 19, 192);
+        }
+
         .email {
             text-align: center;
+            margin: 30px 0;
             font-size: 1.2rem;
-            margin: 20px 0;
+            animation: fadeIn 1.5s ease-in-out;
         }
+
         .email a {
             color: blueviolet;
             text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
         }
+
         .email a:hover {
             color: #8a2be2;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_me.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<nav>
-    <div class="left">Portfolio</div>
-    <div class="right">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_me.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact_me.html">Contact Me</a></li>
-        </ul>
+    <div class="email">
+        <p>Email: <a href="mailto:ankushbhowmik670@gmail.com">ankushbhowmik670@gmail.com</a></p>
     </div>
-</nav>
 
-<div class="heading">Contact Me</div>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form action="/submit_form" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-<div class="email">
-    <p>Email: <a href="mailto:ankushbhowmik670@gmail.com">ankushbhowmik670@gmail.com</a></p>
-</div>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-<div class="container">
-    <form action="/submit_form" method="POST">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
-</div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
 
-<footer>
-    <p>Copyright © ankushbhowmik.in | Designed by Ankush | All rights reserved.</p>
-</footer>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
+    <footer>
+        <div class="footer">
+            <p>Copyright © <a href="www.ankushbhowmik.in">ankushbhowmik.in</a> | Designed by Ankush | All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
