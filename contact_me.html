@@ -4,10 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(4, 4, 39);
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        nav {
+            background: rgb(31, 31, 92);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        nav .left {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav .right ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav .right ul li {
+            margin: 0 15px;
+        }
+        nav .right ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+        nav .right ul li a:hover {
+            color: blueviolet;
+        }
+        .heading {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            margin: 50px 0 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        form {
+            background: #282c34;
+            padding: 40px;
+            box-shadow: 0 0 15px blueviolet;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 1.2rem;
+            color: blueviolet;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid blueviolet;
+            border-radius: 4px;
+            background: #1e1e1e;
+            color: #fff;
+        }
+        button {
+            background: blueviolet;
+            color: #1e1e1e;
+            border: 0;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #8a2be2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a061d;
+            color: rgb(71, 71, 210);
+        }
+        .email {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .email a {
+            color: blueviolet;
+            text-decoration: none;
+        }
+        .email a:hover {
+            color: #8a2be2;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact Me</h1>
-    <div><h3>Under Constructions...</h3></div>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At placeat magni natus, animi inventore perspiciatis eligendi consequatur deserunt, quod maxime, eos rerum consequuntur. Quam similique quae quaerat. Officiis, sint ipsa!
+
+<nav>
+    <div class="left">Portfolio</div>
+    <div class="right">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="heading">Contact Me</div>
+
+<div class="email">
+    <p>Email: <a href="mailto:ankushbhowmik670@gmail.com">ankushbhowmik670@gmail.com</a></p>
+</div>
+
+<div class="container">
+    <form action="/submit_form" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <p>Copyright © ankushbhowmik.in | Designed by Ankush | All rights reserved.</p>
+</footer>
+
 </body>
 </html>
